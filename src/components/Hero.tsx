@@ -128,7 +128,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Image - Auto slideshow - Mobile Optimized */}
-          <div className="relative order-first lg:order-last" data-aos="fade-left" data-aos-duration="1200">
+          <div className="relative order-first lg:order-last -mt-2 sm:-mt-4 md:-mt-6 lg:-mt-10 xl:-mt-14" data-aos="fade-left" data-aos-duration="1200">
             <div className="relative z-10 h-64 sm:h-80 md:h-96 lg:h-[480px] rounded-2xl lg:rounded-3xl overflow-hidden border border-primary/20 shadow-luxury bg-white/60 dark:bg-black/30">
               {slides.map((src, i) => (
                 <img
