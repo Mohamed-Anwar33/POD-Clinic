@@ -1,0 +1,201 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "book_now": "Book Now"
+  },
+  "common": {
+    "book_appointment": "Book your appointment",
+    "see_services": "See our services"
+  },
+  "hero": {
+    "subtitle": "for Specialized Medical Services",
+    "description": "We offer the latest medical technologies for performance assessment, metabolic rate measurement, and body composition analysis with high accuracy and a scientific approach.",
+    "feature_accuracy": {
+      "title": "High Accuracy",
+      "text": "100% reliable results"
+    },
+    "feature_experts": {
+      "title": "Expert Team",
+      "text": "Qualified medical staff"
+    },
+    "feature_flexible": {
+      "title": "Flexible Bookings",
+      "text": "Appointments that fit you"
+    },
+    "image_alt": "POD Clinic - Specialized Medical Services"
+  },
+  "services": {
+    "header": {
+      "title1": "Our",
+      "title2": "Services",
+      "description": "We offer a comprehensive suite of advanced medical tests using the latest global technologies to help you reach your health and fitness goals."
+    },
+    "popular": "Most Popular",
+    "includes": "What the test includes:",
+    "book": "Book {{title}}",
+    "cta": {
+      "title": "Not sure which test is right for you?",
+      "text": "Talk to our specialized team for a free consultation to determine the most suitable test for your goals.",
+      "button": "Free Consultation"
+    },
+    "items": {
+      "vo2": {
+        "title": "VO2max Test",
+        "titleEn": "VO2max Test",
+        "description": "Measure maximum oxygen consumption to determine fitness level and athletic performance",
+        "duration": "45 minutes",
+        "price": "Contact for pricing",
+        "features": [
+          "Determine fitness level",
+          "Assess heart and lung efficiency",
+          "Personalized training plan"
+        ]
+      },
+      "rmr": {
+        "title": "RMR Test",
+        "titleEn": "Resting Metabolic Rate Test",
+        "description": "Measure resting metabolic rate to determine your daily caloric needs",
+        "duration": "30 minutes",
+        "price": "Contact for pricing",
+        "features": [
+          "Determine basal metabolic rate",
+          "Personalized nutrition plan",
+          "Regular follow-up"
+        ]
+      },
+      "fit3d": {
+        "title": "3D Body Composition Test",
+        "titleEn": "Fit3D Body Composition Test",
+        "description": "Accurate analysis of body composition using advanced 3D scanning technology",
+        "duration": "20 minutes",
+        "price": "Contact for pricing",
+        "features": [
+          "3D body scan",
+          "Fat and muscle analysis",
+          "Detailed illustrated report"
+        ]
+      },
+      "package": {
+        "title": "All Tests Package",
+        "titleEn": "All Tests Package",
+        "description": "A comprehensive package that includes all three tests at a special price and great savings",
+        "duration": "2.5 hours",
+        "price": "Special offer",
+        "features": [
+          "All three tests",
+          "Comprehensive detailed report",
+          "Free consultation",
+          "One-month follow-up"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "p1": "Welcome to {{brand}}, our center specialized in offering the latest medical services for performance assessment and general health using world-class technologies.",
+    "p2": "We are a team of specialists in sports medicine and nutrition, dedicated to providing high-quality services that help you understand your body better and achieve your health and athletic goals with a scientific and precise approach.",
+    "p3": "Our mission is to deliver accurate and reliable data that enables you to make informed decisions about your health and lifestyle, with ongoing support and follow-up to ensure the desired results.",
+    "qualifications_title": "Our Qualifications & Experience",
+    "qualifications": [
+      "Degree in Sports Medicine Sciences",
+      "Experience in performance assessment",
+      "Advanced training on VO2max equipment",
+      "Body composition analysis specialization",
+      "Certificate in Sports Nutrition"
+    ],
+    "mission": {
+      "title": "Our Mission",
+      "text": "Provide specialized, high-quality medical services in performance and health assessment, adhering to the highest standards of accuracy and professionalism to help our clients achieve their health goals."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be the leading reference in the region for performance and health assessment services through continuous innovation and adoption of the latest global technologies."
+    },
+    "stats": {
+      "happy_clients": "Happy Clients",
+      "years_experience": "Years of Experience",
+      "tests_done": "Tests Completed",
+      "accuracy": "Result Accuracy"
+    }
+  },
+  "testimonials": {
+    "title1": "What",
+    "title2": "Clients Say",
+    "subtitle": "We are proud of our clients' trust and their positive evaluations of our specialized services",
+    "items": [
+      { "name": "Ahmed Mohammed", "role": "Professional Athlete", "text": "The VO2max test greatly helped me understand my fitness level and improve my training program.", "initials": "AM" },
+      { "name": "Fatimah Al Ali", "role": "Fitness Coach", "text": "RMR measurement was a turning point in understanding my caloric needs. The advice I received was very helpful.", "initials": "FA" },
+      { "name": "Khaled Al Saeed", "role": "Engineer", "text": "Fit3D gave me a clear picture of my body composition in a way I didn't expect. The report was comprehensive and clear.", "initials": "KS" },
+      { "name": "Maryam Hassan", "role": "Physician", "text": "The full package was an excellent investment. Professional service and accurate results are worth every riyal.", "initials": "MH" },
+      { "name": "Ali Al Ahmed", "role": "Football Coach", "text": "I highly recommend POD Clinic. The team is specialized, the equipment is modern, and the follow-up is excellent.", "initials": "AA" },
+      { "name": "Nora Mahmoud", "role": "Nutritionist", "text": "The experience was great from start to finish. The data I got helped me improve my nutrition plans.", "initials": "NM" }
+    ],
+    "stats": {
+      "satisfaction": "Client Satisfaction",
+      "average_rating": "Average Rating",
+      "recommend": "Recommend our services"
+    }
+  },
+  "contact": {
+    "title1": "Contact",
+    "title2": "Us",
+    "subtitle": "We are here to answer your questions and help you book your appointment",
+    "form": {
+      "title": "Book an appointment or send your inquiry",
+      "name_label": "Full Name *",
+      "name_placeholder": "Enter your full name",
+      "phone_label": "Phone Number *",
+      "phone_placeholder": "e.g., 0501234567",
+      "email_label": "Email",
+      "email_placeholder": "example@email.com",
+      "service_label": "Requested Service",
+      "service_options": ["VO2max Test", "RMR Test", "Fit3D", "All Tests Package"],
+      "message_label": "Your Message",
+      "message_placeholder": "Tell us how we can help you...",
+      "submit": "Send Request"
+    },
+    "info": {
+      "title": "Contact Information",
+      "methods": [
+        { "title": "Call Us", "details": ["+965 2234 5678", "+965 9012 3456"], "action": "tel:+96522345678" },
+        { "title": "WhatsApp", "details": ["+965 9012 3456"], "action": "https://wa.me/96590123456" },
+        { "title": "Address", "details": ["Kuwait, Hawalli", "Salem Al Mubarak St, Building 123"], "action": null }
+      ],
+      "hours_title": "Working Hours",
+      "hours": [
+        { "day": "Sat - Wed", "hours": "8:00 AM - 10:00 PM" },
+        { "day": "Thursday", "hours": "8:00 AM - 6:00 PM" },
+        { "day": "Friday", "hours": "Closed" }
+      ],
+      "quick_title": "Direct Contact",
+      "quick_sub": "For quick booking or urgent inquiries",
+      "call_now": "Call Now",
+      "whatsapp": "WhatsApp"
+    },
+    "bottom": {
+      "title": "Need more information?",
+      "text": "Our specialized team is ready to answer all your questions and help you choose the right service for your goals",
+      "consult": "Schedule a Consultation",
+      "email": "Send an Email"
+    }
+  },
+  "footer": {
+    "desc": "A center specialized in providing the latest medical services for performance and health assessment using world-class technologies.",
+    "call": "Call Us",
+    "whatsapp": "WhatsApp",
+    "quick_links": "Quick Links",
+    "services": "Our Services",
+    "contact_info": "Contact Information",
+    "links": ["Home", "Services", "About", "Testimonials", "Contact"],
+    "service_items": ["VO2max Test", "RMR Test", "Fit3D Test", "All Tests Package"],
+    "address": ["Kuwait, Hawalli", "Salem Al Mubarak St, Building 123"],
+    "hours": ["Sat - Wed: 8am - 10pm", "Thu: 8am - 6pm"],
+    "trust": ["Medically Certified", "98% Client Satisfaction", "ISO 9001 Certified"],
+    "copyright": "All rights reserved.",
+    "by": "Designed & Developed by Lovable"
+  }
+}

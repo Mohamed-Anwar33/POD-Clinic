@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* POD Clinic Medical Services Design System - RTL Arabic Support */
+
+@layer base {
+  :root {
+    /* POD Clinic Logo Colors */
+    --pod-white: 0 0% 100%; /* #FFFFFF */
+    --pod-black: 0 0% 0%; /* #000000 */
+    --pod-dark-gray: 210 4% 58%; /* #929497 */
+    --pod-medium-gray: 210 3% 57%; /* #909295 */
+    --pod-light-gray: 240 9% 96%; /* #F4F4F5 */
+    --pod-teal: 177 29% 38%; /* #437E7B */
+
+    /* Main Brand Colors using POD Clinic palette */
+    --background: 240 9% 96%; /* Very light gray background */
+    --foreground: 0 0% 0%; /* Black text */
+
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Primary: Teal Green from logo */
+    --primary: 177 29% 38%; /* POD Teal */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 177 29% 55%;
+    --primary-dark: 177 29% 25%;
+
+    /* Secondary: Lighter teal variation */
+    --secondary: 177 25% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 177 25% 80%;
+
+    --muted: 240 9% 96%; /* Light gray */
+    --muted-foreground: 210 4% 58%; /* Dark gray */
+
+    --accent: 177 29% 55%; /* Lighter teal accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 3% 57%; /* Medium gray borders */
+    --input: 240 9% 96%;
+    --ring: 177 29% 38%;
+
+    /* Luxury gradients with POD colors */
+    --gradient-primary: linear-gradient(135deg, hsl(177 35% 25%), hsl(177 35% 32%), hsl(177 30% 40%));
+    --gradient-secondary: linear-gradient(135deg, hsl(177 25% 65%), hsl(177 25% 80%), hsl(240 9% 96%));
+    --gradient-vision: linear-gradient(135deg, hsl(177 40% 20%), hsl(177 35% 28%), hsl(177 30% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(177 29% 38%), hsl(177 25% 65%), hsl(240 9% 96%));
+    --gradient-cheerful: linear-gradient(135deg, hsl(240 9% 96%), hsl(177 25% 80%));
+    --gradient-soft: linear-gradient(45deg, hsl(177 29% 38% / 0.1), hsl(177 25% 65% / 0.1));
+    --gradient-luxury: linear-gradient(135deg, hsl(177 29% 38%), hsl(0 0% 100%), hsl(177 25% 65%));
+    --gradient-premium: radial-gradient(ellipse at center, hsl(177 29% 38% / 0.1), hsl(177 25% 65% / 0.05), transparent);
+    
+    /* Premium shadows with depth */
+    --shadow-soft: 0 4px 6px -1px hsl(177 29% 38% / 0.1);
+    --shadow-card: 0 10px 25px -3px hsl(177 29% 38% / 0.15);
+    --shadow-glow: 0 0 30px hsl(177 29% 38% / 0.25);
+    --shadow-luxury: 0 20px 40px -10px hsl(177 29% 38% / 0.3), 0 0 60px hsl(177 29% 38% / 0.1);
+    --shadow-premium: 0 30px 60px -20px hsl(177 29% 38% / 0.4), inset 0 1px 0 hsl(0 0% 100% / 0.2);
+
+    --radius: 16px;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 240 9% 96%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 177 29% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 9% 96%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 210 3% 57%;
+    --sidebar-ring: 177 29% 38%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-cairo;
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, hsl(240 9% 96%), hsl(177 25% 80% / 0.1));
+    background-attachment: fixed;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* RTL Support */
+  [dir="rtl"] {
+    direction: rtl;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
+}
+
+@layer components {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .gradient-vision {
+    background: var(--gradient-vision);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-cheerful {
+    background: var(--gradient-cheerful);
+  }
+  
+  .gradient-soft {
+    background: var(--gradient-soft);
+  }
+  
+  .gradient-luxury {
+    background: var(--gradient-luxury);
+  }
+  
+  .gradient-premium {
+    background: var(--gradient-premium);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-luxury {
+    box-shadow: var(--shadow-luxury);
+  }
+  
+  .shadow-premium {
+    box-shadow: var(--shadow-premium);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  /* Luxury background patterns */
+  .bg-pattern-dots {
+    background-image: radial-gradient(circle, hsl(177 29% 38% / 0.08) 2px, transparent 2px);
+    background-size: 40px 40px;
+  }
+  
+  .bg-pattern-grid {
+    background-image: 
+      linear-gradient(hsl(177 29% 38% / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(177 29% 38% / 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  
+  .bg-pattern-waves {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100'%3E%3Cpath d='M0,50 Q250,0 500,50 T1000,50 L1000,100 L0,100 Z' fill='%23437E7B' fill-opacity='0.03'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+
+  .bg-pattern-luxury {
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(177 29% 38% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(177 25% 65% / 0.05) 0%, transparent 50%),
+      linear-gradient(45deg, transparent 40%, hsl(0 0% 100% / 0.02) 50%, transparent 60%);
+    background-size: 200px 200px, 300px 300px, 100px 100px;
+  }
+
+  /* Luxury floating elements */
+  .floating-shapes::before {
+    content: '';
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, hsl(177 29% 38% / 0.08), hsl(177 25% 65% / 0.06));
+    border-radius: 50%;
+    filter: blur(1px);
+    animation: luxuryFloat 8s ease-in-out infinite;
+  }
+  
+  .floating-shapes::after {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    left: 12%;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, hsl(177 25% 65% / 0.1), hsl(0 0% 100% / 0.05));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    filter: blur(0.5px);
+    animation: luxuryFloat 10s ease-in-out infinite reverse;
+  }
+
+  @keyframes luxuryFloat {
+    0%, 100% { 
+      transform: translateY(0px) rotate(0deg) scale(1); 
+      opacity: 0.6;
+    }
+    33% { 
+      transform: translateY(-15px) rotate(5deg) scale(1.05); 
+      opacity: 0.8;
+    }
+    66% { 
+      transform: translateY(-25px) rotate(-3deg) scale(0.95); 
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(177 29% 38% / 0.2); }
+    50% { box-shadow: 0 0 40px hsl(177 29% 38% / 0.4), 0 0 60px hsl(177 29% 38% / 0.1); }
+  }
+
+  /* Luxury card hover effects */
+  .card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(177 29% 38% / 0.1), transparent);
+    transition: left 0.6s;
+    z-index: 1;
+  }
+  
+  .card-hover:hover::before {
+    left: 100%;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: var(--shadow-luxury);
+    border: 1px solid hsl(177 29% 38% / 0.2);
+  }
+
+  /* Beautiful button styles */
+  .btn-cheerful {
+    background: linear-gradient(135deg, hsl(177 29% 38%), hsl(177 29% 45%));
+    border: none;
+    border-radius: 25px;
+    padding: 14px 32px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 25px hsl(177 29% 38% / 0.3);
+  }
+  
+  .btn-cheerful::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.6s;
+  }
+  
+  .btn-cheerful::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    padding: 1px;
+    background: linear-gradient(135deg, hsl(177 29% 38%), transparent, hsl(177 25% 65%));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+  }
+  
+  .btn-cheerful:hover::before {
+    left: 100%;
+  }
+  
+  .btn-cheerful:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px hsl(177 29% 38% / 0.4);
+    background: linear-gradient(135deg, hsl(177 29% 45%), hsl(177 29% 52%));
+  }
+
+  /* Luxury typography */
+  .font-luxury {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .text-luxury {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px hsl(177 29% 38% / 0.2));
+  }
+
+  /* Floating WhatsApp FAB */
+  .whatsapp-fab {
+    @apply relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-2xl text-white shadow-premium transition-smooth;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.25), transparent 35%), linear-gradient(135deg, #25D366, #1ebe5a, #0fa958);
+    border: 1px solid rgba(255,255,255,0.2);
+    transform: translateZ(0); /* enable GPU */
+  }
+  .whatsapp-fab:hover { transform: translateY(-4px) scale(1.03); }
+  .whatsapp-fab:active { transform: translateY(-1px) scale(0.99); }
+
+  .fab-sheen {
+    background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.18) 40%, transparent 60%);
+    transform: skewX(-15deg);
+    animation: fabSheen 3.2s ease-in-out infinite;
+    border-radius: 1rem;
+  }
+
+  .fab-ring, .fab-ring::after {
+    position: absolute;
+    inset: -6px;
+    border-radius: 20px;
+    content: '';
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.35);
+    animation: fabPulse 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  }
+  .fab-ring::after { inset: -10px; animation-delay: 0.6s; }
+  .fab-ring-delay { animation-delay: 1.2s; }
+
+  .fab-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px; height: 6px;
+    background: #25D366;
+    border-radius: 9999px;
+    box-shadow: 0 0 18px rgba(37, 211, 102, 0.8);
+    transform-origin: -42px -42px; /* orbit radius */
+    animation: orbit 5.5s linear infinite;
+  }
+
+  @keyframes fabPulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.35); }
+    70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+
+  @keyframes fabSheen {
+    0% { transform: translateX(-120%) skewX(-15deg); }
+    50% { transform: translateX(120%) skewX(-15deg); }
+    100% { transform: translateX(120%) skewX(-15deg); }
+  }
+
+  @keyframes orbit {
+    0% { transform: rotate(0deg) translate(-50%, -50%); opacity: 0.9; }
+    50% { opacity: 0.6; }
+    100% { transform: rotate(360deg) translate(-50%, -50%); opacity: 0.9; }
+  }
+
+ }
+  @layer components {
+    /* Spectacular multi-layered hero background animation */
+    .hero-bg-drift {
+      animation: 
+        heroSpectacularDrift 25s ease-in-out infinite alternate,
+        heroFloating 8s ease-in-out infinite,
+        heroBreathing 12s ease-in-out infinite alternate,
+        heroPulse 15s ease-in-out infinite;
+      will-change: transform, background-position, filter;
+      transform: scale(1.08) rotate(0.5deg);
+      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      filter: brightness(1.02) saturate(1.1) contrast(1.05);
+    }
+    
+    .hero-bg-drift:hover {
+      animation-duration: 18s, 6s, 9s, 12s;
+      filter: brightness(1.08) saturate(1.2) contrast(1.1) hue-rotate(2deg);
+      transform: scale(1.12) rotate(-0.3deg);
+    }
+  }
+
+  /* Spectacular hero background keyframe animations */
+  @keyframes heroSpectacularDrift {
+    0% {
+      background-position: 50% 45%;
+      transform: scale(1.08) rotate(0.5deg) translate3d(-2px, -3px, 0);
+    }
+    25% {
+      background-position: 45% 55%;
+      transform: scale(1.085) rotate(-0.3deg) translate3d(4px, -1px, 0);
+    }
+    50% {
+      background-position: 55% 40%;
+      transform: scale(1.09) rotate(0.8deg) translate3d(-1px, 2px, 0);
+    }
+    75% {
+      background-position: 48% 58%;
+      transform: scale(1.075) rotate(-0.6deg) translate3d(3px, -2px, 0);
+    }
+    100% {
+      background-position: 52% 42%;
+      transform: scale(1.08) rotate(0.4deg) translate3d(-2px, 1px, 0);
+    }
+  }
+
+  @keyframes heroFloating {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-8px) translateX(3px) rotate(0.2deg);
+    }
+    50% {
+      transform: translateY(-12px) translateX(-2px) rotate(-0.1deg);
+    }
+    75% {
+      transform: translateY(-6px) translateX(4px) rotate(0.3deg);
+    }
+  }
+
+  @keyframes heroBreathing {
+    0% {
+      transform: scale(1) rotate(0deg);
+      filter: blur(0px);
+    }
+    50% {
+      transform: scale(1.02) rotate(0.2deg);
+      filter: blur(0.3px);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      filter: blur(0px);
+    }
+  }
+
+  @keyframes heroPulse {
+    0%, 100% {
+      opacity: 0.2;
+      transform: scale(1);
+    }
+    25% {
+      opacity: 0.25;
+      transform: scale(1.01);
+    }
+    50% {
+      opacity: 0.22;
+      transform: scale(1.015);
+    }
+    75% {
+      opacity: 0.28;
+      transform: scale(1.005);
+    }
+  }
+
+  /* Gentle mobile-only animation */
+  @keyframes heroMobileGentle {
+    0% {
+      background-position: 50% 50%;
+      transform: scale(1.02);
+    }
+    50% {
+      background-position: 52% 48%;
+      transform: scale(1.025);
+    }
+    100% {
+      background-position: 48% 52%;
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes heroDrift {
+    0% {
+      background-position: 50% 45%;
+      transform: scale(1.065) rotate(0.2deg) translate3d(0px, 0px, 0);
+    }
+    25% {
+      background-position: 47% 52%;
+      transform: scale(1.08) rotate(0.4deg) translate3d(-4px, 3px, 0);
+    }
+    50% {
+      background-position: 53% 55%;
+      transform: scale(1.095) rotate(0deg) translate3d(3px, 5px, 0);
+    }
+    75% {
+      background-position: 49% 48%;
+      transform: scale(1.085) rotate(-0.3deg) translate3d(2px, -3px, 0);
+    }
+    100% {
+      background-position: 52% 50%;
+      transform: scale(1.11) rotate(0.2deg) translate3d(0px, 0px, 0);
+    }
+  }
+
+  /* Floating particles effect for hero background */
+  .hero-particles {
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(67, 126, 123, 0.1) 2px, transparent 2px),
+      radial-gradient(circle at 80% 70%, rgba(67, 126, 123, 0.08) 1px, transparent 1px),
+      radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px),
+      radial-gradient(circle at 90% 20%, rgba(67, 126, 123, 0.06) 2.5px, transparent 2.5px),
+      radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 200px 200px, 150px 150px, 300px 300px, 250px 250px, 180px 180px;
+    animation: particleFloat 20s linear infinite, particleDrift 35s ease-in-out infinite alternate;
+    opacity: 0.6;
+  }
+
+  @keyframes particleFloat {
+    0% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+    25% { background-position: 25% 25%, -25% 25%, 25% -25%, -25% -25%, 25% 25%; }
+    50% { background-position: 50% 50%, -50% 50%, 50% -50%, -50% -50%, 50% 50%; }
+    75% { background-position: 75% 25%, -25% 75%, 25% -75%, -75% -25%, 75% 25%; }
+    100% { background-position: 100% 0%, 0% 100%, 100% -100%, -100% 0%, 100% 0%; }
+  }
+
+  @keyframes particleDrift {
+    0% { transform: translateX(-10px) translateY(-5px) rotate(0deg); }
+    50% { transform: translateX(15px) translateY(-15px) rotate(180deg); }
+    100% { transform: translateX(-5px) translateY(-8px) rotate(360deg); }
+  }
+
+  /* Responsive tuning for motion pacing */
+  @media (min-width: 1024px) { /* lg and up */
+    .hero-bg-drift { 
+      animation-duration: 30s, 10s, 15s, 18s; 
+    }
+    .hero-bg-drift:hover { 
+      animation-duration: 20s, 7s, 11s, 14s; 
+    }
+    .hero-particles {
+      animation-duration: 25s, 40s;
+    }
+  }
+  @media (max-width: 640px) { /* sm and below */
+    .hero-bg-drift { 
+      animation: heroMobileGentle 30s ease-in-out infinite alternate;
+      transform: scale(1.02) !important;
+    }
+    .hero-particles {
+      animation: none;
+      opacity: 0.2;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bg-drift {
+      animation: none !important;
+      transform: none !important;
+    }
+  }
